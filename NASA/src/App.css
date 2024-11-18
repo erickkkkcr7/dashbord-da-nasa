@@ -1,0 +1,148 @@
+/**
+ * Nome do arquivo: App.css
+ * Data de criação: 13/11/2024
+ * Autor: [João Eric]
+ * Matrícula: [01711035]
+ *
+ * Descrição:
+ * Estilos gerais
+ */
+
+/* fundo escuro */
+body {
+  background-color: #121212;
+  color: white;
+}
+
+.App {
+  background-color: #1c1c1c;
+}
+
+button {
+  background-color: #333;
+  color: white;
+}
+
+button:hover {
+  background-color: #444;
+}
+/* Animações */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.App {
+  animation: fadeIn 1s ease-out;
+}
+
+button, input[type="date"] {
+  animation: fadeIn 1s ease-out;
+  animation-delay: 0.5s;  /* Delay para que o botão e o input apareçam após o conteúdo */
+}
+/* zoom ao passar pela imagem :) */
+.image-container img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+}
+
+.image-container img:hover {
+  transform: scale(1.05);  /* Zoom suave quando o mouse passa sobre a imagem */
+}
+/*efeito hover no botão*/
+button {
+  background-color: #8f8ffab9;
+  border:solid 2px #0022bbb9;
+  border-radius: 20px;
+
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0022bbb9;
+}
+ /*titulos*/
+ h2 {
+  font-weight: 350;
+  color: #cbcaca;
+  font-size: 50px;
+  margin: 5px;
+  margin-left: 80px;
+  margin-bottom: 1px;
+}
+h1{
+  margin-left: 150px;
+  margin-bottom: 80px;
+}
+/*imagem*/
+.image-container{
+  margin-left: 90px;
+  margin-block-start: 50px;
+  size: 500px;
+
+}
+/* Botão de buscar*/
+button{
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: 200px;
+
+}
+/* selecionar a data*/
+input{
+margin-left: 1100px;
+inline-size: 120px;
+font-size:large;
+}
+/* Adiciona um contêiner flexível para a imagem e a descrição */
+.image-container {
+  margin-left: 90px;
+  margin-top: 1px;
+  size: 500px;
+}
+
+/* Define o tamanho da parte da imagem */
+.image-side {
+  flex: 1;
+  max-width: 50%;
+}
+.image-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  gap: 50px
+}
+
+/* Define o tamanho da parte da descrição */
+.description-side {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 20px; 
+}
+
+/* Estilos adicionais */
+.description-side h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.description-side p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #cacaca;
+}
+
+
